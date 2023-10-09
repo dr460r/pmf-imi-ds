@@ -1,2 +1,4 @@
-# pmf-imi-ds
+# Dizajniranje Softvera - Resursi
+
+- [Notes](./Notes/README.md)
  
