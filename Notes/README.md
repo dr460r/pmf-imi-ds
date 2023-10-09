@@ -112,7 +112,7 @@ Druga linija
 
 ```
 
-### Svojstva (_property_) (TODO)
+### Svojstva (_property_)
 Koriste se kao obični atributi i predstavljaju podatke:
 ```cs
 objekat.Svojstvo = "vrednost";
@@ -121,6 +121,18 @@ Console.Write(objekat.Svojstvo);
 Definišu se na dva načina. Prvi je jednostavan, **bez uvođenja** dodatnog atributa koji čuva podatke:
 ```cs
 int Broj { get; set; }
+```
+Uz ograničene dozvole:
+```cs
+public int Broj { get; private set; }
+```
+Drugi način, dodatni atribut i robusnija kontrola:
+```cs
+int broj;
+int Broj { 
+    get { return broj; } 
+    set { broj = value; } 
+}
 ```
 
 ### Parcijalne klase
