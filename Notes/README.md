@@ -92,10 +92,29 @@ int Suma(params int[] brojevi) {
 Suma(1,2,3,4,5);
 ```
 
-### Boksovanje (TODO)
+### Boksovanje
+Svi primitivni tipovi u C# su takodje objekti. Na primer, tip `int` je samo alias za klasu `System.Int32`.
+Ali primitivni tipovi se razlikuju od običnih klasa po tome što se njihove instance prenose po vrednosti.
+Što znači da će se `int` objekat kopirati u drugu promenljivu prilikom dodele vrednosti, npr:
 ```cs
-
+int x = 10;
+int y = x;
 ```
+ovde, `x` i `y` sadrže dva različita objekta.
+
+`Boxing` je proces gde od objekta koji se prenosi po vrednosti kreiramo objekat istog tipa ali koji se prenosi po referenci.
+Na primer:
+```cs
+int x = 10;
+object y = x; // <- Boxing
+```
+`Unboxing` je suprotan proces:
+```cs
+int x = 10;
+object y = x;
+int z = (int)y; // <- Unboxing
+```
+
 
 ### Višelinijski stringovi
 ```cs
