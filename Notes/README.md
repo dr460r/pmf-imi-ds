@@ -60,6 +60,27 @@ class Klasa : Roditelj
 }
 ```
 
+### _Overriding_
+
+```java
+class Roditelj {
+    void Metoda() { }
+}
+
+class Klasa extends Roditelj {
+    void Metoda() { } // Automatski "gazi" roditeljski implementaciju metode "Metoda"
+}
+```
+```cs
+class Roditelj {
+    virtual void Metoda() { } // virtual = moze da se pregazi u child klasi
+}
+
+class Klasa : Roditelj {
+    override void Metoda() { } // override = gazi roditeljski implementaciju
+}
+```
+
 ### _Foreach_ petlja: `for` vs. `foreach`
 ```java
 // Java
