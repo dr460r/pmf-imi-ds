@@ -1,4 +1,4 @@
-# Dizajniranje Softvera - Resursi
+# Dizajniranje Softvera
 
-- [Notes](./Notes/README.md)
+## Projekat je izmešten: [**_imioer.github.io/ds_**](https://imioer.github.io/ds)
  
